@@ -1,0 +1,7 @@
+<h1>New a product</h1>
+
+<%= form_for(@product) do |f| %>
+<%= render :partial => "form", :locals => { :f => f } %>
+<% end %>
+<br/>
+<%= link_to("Back", products_url) %>
